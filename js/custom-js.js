@@ -126,7 +126,8 @@ jQuery(function ($) {
 
                 var trackNumber = value.track,
                     trackFile = mediaPath + value.file + ".mp3",
-                    trackImage = mediaPath + value.file + ".jpg";
+                    trackImage = mediaPath + value.file + ".jpg",
+                    trackFilename = value.track;
                 // if (trackNumber.toString().length === 1) {
                 //     trackNumber = '0' + trackNumber;
                 // }
@@ -140,7 +141,7 @@ jQuery(function ($) {
                             </div>\
                             <div class="song-play-area">\
                                 <div class="song-name">\
-                                    <p>01. Sajni Song by Jal - Farhan Saeed</p>\
+                                    <p>'+ trackFilename +'</p>\
                                 </div>\
                                 <audio preload="auto" controls>\
                                     <source src="'+ trackFile +'">\
