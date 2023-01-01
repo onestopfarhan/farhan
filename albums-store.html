@@ -15,7 +15,10 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/classy-nav.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/audio-player/plyr.css">
     <link rel="stylesheet" href="css/custom-css.css">
 
 </head>
@@ -34,137 +37,82 @@
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Navbar Area -->
-        <div class="oneMusic-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
-                        <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand logo">Farhan Saeed</a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
+            <div class="oneMusic-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container">
                         <!-- Menu -->
-                        <div class="classy-menu">
+                        <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
-                            <!-- Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            <!-- Nav brand -->
+                            <a href="index.html" class="nav-brand logo">Farhan Saeed</a>
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
                             </div>
 
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="albums-store.html">Songs</a></li>
-                                    <li><a href="event.html">Events</a></li>
-                                    <li><a href="blog.html">News</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
+                            <!-- Menu -->
+                            <div class="classy-menu">
 
-                                <!-- Login/Register & Cart Button -->
+                                <!-- Close Button -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="albums-store.html">Songs</a></li>
+                                        <li><a href="event.html">Events</a></li>
+                                        <li><a href="blog.html">News</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+
+                                    <!-- Login/Register & Cart Button -->
+                                </div>
+                                <!-- Nav End -->
+
                             </div>
-                            <!-- Nav End -->
-
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay mb-100" style="background-image: url(img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>Listen to all his songs</p>
-            <h2>Farhan's all songs</h2>
+            <p>Listen to your favorite songs</p>
+            <h2>Farhan Saeed's all songs</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
-
-
-    <!-- ##### Song Area Start ##### -->
     <div class="one-music-songs-area mb-70">
         <div class="container">
-            <div class="row">
-
-                <!-- Single Song Area -->
-                <div class="col-12">
-                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                        <div class="song-thumbnail">
-                            <img src="img/bg-img/s1.jpg" alt="">
+            <div class="column add-bottom">
+                <div id="mainwrap">
+                    <!-- <div id="nowPlay">
+                        <span id="npAction">Paused...</span><span id="npTitle"></span>
+                    </div> -->
+                    <!-- <div id="audiowrap">
+                        <div id="audio0">
+                            <audio id="audio1" controls>Your browser does not support HTML5 Audio! 😢</audio>
                         </div>
-                        <div class="song-play-area">
-                            <div class="song-name">
-                                <p>01. Sajni Song by Jal - Farhan Saeed</p>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/Sajni - Official Video Song _ Boondh A Drop of Jal _ Jal - The Band.mp3">
-                            </audio>
+                        <div id="tracks">
+                            <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
                         </div>
+                    </div> -->
+                    <div id="plwrap">
+                        <ul id="plList"></ul>
                     </div>
                 </div>
-
-                <!-- Single Song Area -->
-                <div class="col-12">
-                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                        <div class="song-thumbnail">
-                            <img src="img/bg-img/s2.jpg" alt="">
-                        </div>
-                        <div class="song-play-area">
-                            <div class="song-name">
-                                <p>01. Main Hit Song</p>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Song Area -->
-                <div class="col-12">
-                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                        <div class="song-thumbnail">
-                            <img src="img/bg-img/s3.jpg" alt="">
-                        </div>
-                        <div class="song-play-area">
-                            <div class="song-name">
-                                <p>01. Sajna Farhan Saeed</p>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/Sajna-Farhan-Saeed.mp3">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Song Area -->
-                <div class="col-12">
-                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                        <div class="song-thumbnail">
-                            <img src="img/bg-img/s4.jpg" alt="">
-                        </div>
-                        <div class="song-play-area">
-                            <div class="song-name">
-                                <p>01. Main Hit Song</p>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+        
     </div>
-    <!-- ##### Song Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -196,15 +144,39 @@ All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i>
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- <script type="text/javascript">
+        var jQuery = $.noConflict(true);
+    </script> -->
     <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
+
     <!-- All Plugins js -->
     <script src="js/plugins/plugins.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!-- Audio Player js -->
+    <!-- <script src="js/audio-player/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript">
+        var jQuery_3_6_0 = $.noConflict(true);
+    </script> -->
+    <script src="js/audio-player/html5media.min.js"></script>
+    <script src="js/audio-player/plyr.min.js"></script>
+    <!-- Custom js -->
+    <script src="js/custom-js.js"></script>
+
 </body>
 
 </html>
