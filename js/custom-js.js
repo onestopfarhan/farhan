@@ -127,7 +127,7 @@ jQuery(function ($) {
                 var trackNumber = value.track,
                     trackFile = mediaPath + value.file + ".mp3",
                     trackImage = mediaPath + value.file + ".jpg",
-                    trackFilename = value.track;
+                    trackFilename = value.file;
                 // if (trackNumber.toString().length === 1) {
                 //     trackNumber = '0' + trackNumber;
                 // }
