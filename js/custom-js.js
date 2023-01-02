@@ -122,7 +122,7 @@ $(document).ready(function(){
     });
     $(document.body).bind('touchmove',function() {
         //console.log("touch move");
-        if($(window).pageYOffset+1 >= $(document).height() - $(window).height()) {
+        if(document.body.scrollTop+1 >= $(document).height() - $(window).height()) {
             var last_index = $('#plList li:last-child')[0].getAttribute("id");
             loadAudio(parseInt(last_index)+1, tracks, mediaPath);
         }
