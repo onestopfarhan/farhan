@@ -131,7 +131,7 @@ jQuery(function ($) {
                 // if (trackNumber.toString().length === 1) {
                 //     trackNumber = '0' + trackNumber;
                 // }
-                console.log("trackFile", trackFile)
+                //console.log("trackFile", trackFile)
                 $('#plList').append('<li> \
                     <div class="row">\
                     <div class="col-12">\
