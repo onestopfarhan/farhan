@@ -114,13 +114,15 @@ $(document).ready(function(){
     }
 
     $(window).scroll(function() {
+        //console.log("scroll");
         if($(window).scrollTop()+1 >= $(document).height() - $(window).height()) {
             var last_index = $('#plList li:last-child')[0].getAttribute("id");
             loadAudio(parseInt(last_index)+1, tracks, mediaPath);
         }
     });
     $(document.body).bind('touchmove',function() {
-        if($(window).scrollTop()+1 >= $(document).height() - $(window).height()) {
+        //console.log("touch move");
+        if($(window).pageYOffset+1 >= $(document).height() - $(window).height()) {
             var last_index = $('#plList li:last-child')[0].getAttribute("id");
             loadAudio(parseInt(last_index)+1, tracks, mediaPath);
         }
