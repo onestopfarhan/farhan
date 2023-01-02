@@ -119,6 +119,12 @@ $(document).ready(function(){
             loadAudio(parseInt(last_index)+1, tracks, mediaPath);
         }
     });
+    $(document.body).bind('touchmove',function() {
+        if($(window).scrollTop()+1 >= $(document).height() - $(window).height()) {
+            var last_index = $('#plList li:last-child')[0].getAttribute("id");
+            loadAudio(parseInt(last_index)+1, tracks, mediaPath);
+        }
+    });
 });
 
 function loadAudio(index, track, mediaPath) {
