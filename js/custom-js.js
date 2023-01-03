@@ -2,9 +2,10 @@ $(document).ready(function(){
     var supportsAudio = !!document.createElement('audio').canPlayType;
     if (supportsAudio) {
         var mediaPath = 'https://archive.org/download/farhan-saeed/',
-        tracks = [{
-            "file": "Aadat - JAL (Farhan, Goher & Shazi)"
-        },
+        tracks = [
+        //     {
+        //     "file": "Aadat - JAL (Farhan, Goher & Shazi)"
+        // },
         {
             "file": "Bhool Na Jaana  Saddest Song"
         },{
